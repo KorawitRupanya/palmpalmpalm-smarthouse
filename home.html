@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./home-style.css">
+  <title>Palm Palm Palm Smart-House</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <h3 style="color: white">palm</h3>
+    <h3>lm</h3>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" style="margin-left: 20px;">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item active" style="margin-left: 10px;">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <form class="form-inline my-2 my-lg-0">
+          <img id="logout-button" src="https://image.ibb.co/gtqsWy/lockout.png" alt="Logout">
+        </form>
+      </a>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div id="all-function">
+          <img id="house" src="https://image.ibb.co/ivPfZJ/house2.png" alt="smart-house">
+          <div id="sun-moon"></div>
+          <div id="add-light"></div>
+          <div id="add-door"></div>
+          <div id="add-air"></div>
+          <div id="add-bell"></div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div id="air-status" class="alert alert-danger" role="alert">
+          <div class="row">
+            <div class="col-9">
+              <h4 class="card-title">Air Conditioner</h4>
+              <h5>Status</h5>
+              <ul>
+                <li>open</li>
+                <div id="tem-status">
+                  <li>temperature: 25 celsius degree</li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-3">
+              <!-- <Button trigger modal -->
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter3">
+                Option
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Light</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="box">
+                      <div>
+                        <center>
+                          <div>
+                            <div id="tem">
+                              <h1>25</h1>
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-primary btn-xs" id="down">
+                              <img src="popup-images/down-arrow 16.png">
+                            </button>
+                            <button id="open-air" type="button" class="btn btn-secondary">ON</button>
+                            <button id="close-air" type="button" class="btn btn-secondary">OFF</button>
+                            <button type="button" class="btn btn-primary btn-xs" id="up">
+                              <img src="popup-images/up-arrow.png" alt="">
+                            </button>
+                        </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="light-status" class="alert alert-danger" role="alert">
+            <div class="row">
+              <div class="col-7">
+                <h4 class="card-title">Light</h4>
+                <h5>Status</h5>
+                <ul>
+                  <li>open</li>
+                </ul>
+              </div>
+              <div class="col-5">
+                <!-- <Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+                  Option
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Light</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class='text-center'>
+                          <!-- <div> -->
+                          <!-- <button type="button" class="btn btn-secondary">
+                            <img src="popup-images/sun.png">-</button>
+                          <button type="button" class="btn btn-secondary">
+                            <img src="popup-images/sun2.png">+</button> -->
+                          <!-- </div> -->
+                          <br>
+                          <div>
+                            <button id="open-light" type="button" class="btn btn-secondary">ON</button>
+                            <button id="close-light" type="button" class="btn btn-secondary">OFF</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bell-status" class="alert alert-danger" role="alert">
+            <div class="row">
+              <div class="col-7">
+                <h4 class="card-title">Bell</h4>
+                <h5>Status</h5>
+                <ul>
+                  <li>alert</li>
+                </ul>
+              </div>
+              <div class="col-5">
+                <!-- <Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter2">
+                  Option
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Bell</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class='text-center'>
+                          <br>
+                          <div>
+                            <button id="open-bell" type="button" class="btn btn-secondary">ON</button>
+                            <button id="close-bell" type="button" class="btn btn-secondary">OFF</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="door-status" class="alert alert-danger" role="alert">
+            <div class="row">
+              <div class="col-7">
+                <h4 class="card-title">Door</h4>
+                <h5>Status</h5>
+                <ul>
+                  <li>Open</li>
+                </ul>
+              </div>
+              <div class="col-5">
+                <!-- <Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalCenterr">
+                  Option
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="modalCenterr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Door</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class='text-center'>
+                          <div>
+                            <button id="open-door" type="button" class="btn btn-secondary jumbotron">
+                              <img src="popup-images/open-exit-door.png">
+                              <br>
+                              <p style="color: black;">Open</p>
+                            </button>
+                            <button id="close-door" type="button" class="btn btn-secondary jumbotron">
+                              <img src="popup-images/closed-filled-rectangular-door.png">
+                              <br>
+                              <p style="color: black;">Close</p>
+                            </button>
+                          </div>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="control-button">
+            <!-- <button id="sun-button">Morning</button>
+          <button id="moon-button">Night</button> -->
+          </div>
+        </div>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+      <script src="./app.js"></script>
+</body>
+
+</html>

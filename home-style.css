@@ -1,0 +1,99 @@
+#house {
+  position: absolute;
+  width: 850px;
+  top: 110px;
+  left: 0px;
+}
+
+#light {
+  position: absolute;
+  width: 290px;
+  top: 264px;
+  left: 201px;
+}
+
+#door {
+  position: absolute;
+  width: 112px;
+  top: 405px;
+  left: 494px;
+}
+
+#air {
+  position: absolute;
+  width: 28px;
+  top: 289px;
+  left: 103px;
+}
+
+#bell {
+  position: absolute;
+  width: 100px;
+  top: 400px;
+  left: 600px;
+}
+
+#sun {
+  position: absolute;
+  width: 130px;
+  top: 35px;
+  left: 30px;
+}
+
+#moon {
+  position: absolute;
+  width: 130px;
+  top: 35px;
+  left: 30px;
+}
+
+#all-function {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#air-status {
+  margin-top: 40px;
+  width: 450px;
+}
+
+#light-status {
+  width: 250px;
+}
+
+#bell-status {
+  margin-left: 100px;
+  width: 230px;
+}
+
+#door-status {
+  margin-left: 100px;
+  width: 230px;
+}
+
+#control-button {
+  position: absolute;
+  top: 700px;
+  left: 30px;
+}
+
+#logout-button {
+  margin-right: 10px;
+  height: 30px;;
+}
+
+#logout-button:hover {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.nav-link:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+
